@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>alumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">alumno</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-list>
+      
+        <ion-card-title>Iniciar sesion alumno</ion-card-title>
+    
+        <ion-item>
+          <ion-label position="floating">Ingrese nombre</ion-label>
+          <ion-input [(ngModel)]="nombre" placeholder="juan"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label position="floating">Ingrese contraseña</ion-label>
+          <ion-input [(ngModel)]="password" type="password" placeholder="password"></ion-input>
+        </ion-item>
+    
+    </ion-list>
+    <ion-item>
+      <ion-button [routerLink]="['/home']">volver</ion-button>
+      
+
+      <ion-button [routerLink]="['/inicio-alumno']">iniciar sesion</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button [routerLink]="['/recuperar-clave']">recuperar contraseña</ion-button>
+    </ion-item>
+
+  </ion-card>
+  
+
+</ion-content>

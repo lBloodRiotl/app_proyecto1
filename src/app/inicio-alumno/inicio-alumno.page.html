@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>inicioAlumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inicioAlumno</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+      <ion-list>
+        <ion-card-title >Datos alumno</ion-card-title>
+        
+        <ion-list>
+          <ion-item>
+           <ion-input label="Nombre Alumno" placeholder="Benjamin"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-input label="Curso" placeholder="Informatica" ></ion-input>
+          </ion-item>
+
+          <ion-row responsive-sm>
+            <ion-col col-12 width-50 text-center>
+              <ion-img src="assets/imagenes/Scanner icon.png" style="height: auto; max-width: 23vh; max-width: 1000px; height: 125px; padding: .5em; " ></ion-img>
+            </ion-col>
+          </ion-row>
+
+          <ion-button [routerLink]="['/home']">volver</ion-button>
+
+          <ion-button>Escanear QR</ion-button>
+
+        
+        </ion-list>
+      </ion-list>
+
+  
+</ion-content>
